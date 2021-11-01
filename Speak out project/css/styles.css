@@ -1,9 +1,27 @@
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c7c6c6;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c7c6c6;
+}
+
 body {
   background-color: whitesmoke;
   font: bold 14px/1.4 "Open Sans", arial, sans-serif;
-  background: url(/image.jpg) no-repeat center / cover;
+  background: url('../image.jpg') no-repeat center / cover;
   background-position: top;
-  position: fixed;
+  /* position: fixed; */
+  overflow: hidden;
+  overflow-y: scroll;
 }
 header {
   display: flex;
@@ -78,10 +96,11 @@ header {
   left: 75px;
   bottom: 15px;
   padding: 10px 30px;
-
+  transition: all 1s;
   border-radius: 50px;
   border-color: black;
   border-style: solid;
+  cursor: pointer;
 }
 
 .buy {
@@ -95,6 +114,8 @@ header {
   border-color: black;
   border-radius: 50px;
   border-style: solid;
+  cursor: pointer;
+  transition: all 1s;
 }
 .tee {
   font: bold 50px/1.4 "Open Sans", arial, sans-serif;
