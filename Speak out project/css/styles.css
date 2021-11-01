@@ -1,0 +1,136 @@
+body {
+  background-color: whitesmoke;
+  font: bold 14px/1.4 "Open Sans", arial, sans-serif;
+  background: url(/image.jpg) no-repeat center / cover;
+  background-position: top;
+  position: fixed;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 200px;
+  position: relative;
+  bottom: 70px;
+  left: 20px;
+}
+
+.nav-links {
+  padding: 28px 0;
+}
+.nav-links li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.nav-links li a {
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+  left: 375px;
+  bottom: 120px;
+}
+
+.nav-links a::after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+
+  background: black;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.containers {
+  color: black;
+  font-size: 20px;
+  position: relative;
+  left: 100px;
+  top: 150px;
+}
+
+.new {
+  font: sans-serif;
+  font-weight: 700;
+}
+
+.button {
+  color: black;
+  font-size: 22px;
+  position: relative;
+  display: inline-block;
+  left: 75px;
+  bottom: 15px;
+  padding: 10px 30px;
+
+  border-radius: 50px;
+  border-color: black;
+  border-style: solid;
+}
+
+.buy {
+  color: black;
+  font-size: 22px;
+  position: relative;
+  display: inline-block;
+  bottom: 15px;
+  left: 20px;
+  padding: 10px 30px;
+  border-color: black;
+  border-radius: 50px;
+  border-style: solid;
+}
+.tee {
+  font: bold 50px/1.4 "Open Sans", arial, sans-serif;
+  position: relative;
+  bottom: 10px;
+}
+
+.quality {
+  color: rgb(46, 45, 45);
+  position: relative;
+  bottom: 10px;
+}
+
+.buy:hover {
+  color: white;
+  background-color: black;
+}
+
+.button:hover {
+  color: white;
+  background-color: black;
+}
+
+.best {
+  font-family: "Raleway", sans-serif;
+  position: relative;
+  top: 200px;
+  left: 270px;
+  font: bold 35px/1.4 "Open Sans", arial, sans-serif;
+}
+
+.here {
+  font-family: "Raleway", sans-serif;
+  position: relative;
+  top: 200px;
+  left: 10px;
+  font-size: 20px;
+  font-weight: 700;
+}
